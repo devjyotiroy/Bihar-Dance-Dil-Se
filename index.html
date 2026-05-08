@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bihar Dance Dil Se (BDDS)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <div class="logo">
+                <span class="logo-b">B</span>DDS
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#styles" data-expand-site>Classes</a></li>
+                <li><a href="#gallery" data-expand-site>Gallery</a></li>
+                <li><a href="#timings" data-expand-site>Timings</a></li>
+                <li><a href="#contact" data-expand-site>Contact</a></li>
+                <li><a href="#portal">Student Login</a></li>
+                <li><a href="#portal" class="teacher-link">Teacher Login</a></li>
+                <li><a href="#contact" class="nav-cta" data-expand-site>Join Now</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation" aria-expanded="false" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SLIDESHOW ===== -->
+    <section class="hero" id="home">
+        <div class="slides">
+            <div class="slide active" style="background-image:url('assets/images/hero-bg.jpg')"></div>
+            <div class="slide" style="background-image:url('assets/images/performance-1.jpg')"></div>
+            <div class="slide" style="background-image:url('assets/images/performance-2.jpg')"></div>
+            <div class="slide" style="background-image:url('assets/images/group-performance.jpg')"></div>
+            <div class="slide" style="background-image:url('assets/images/practice-session.jpg')"></div>
+            <div class="slide" style="background-image:url('assets/images/event-highlight.jpg')"></div>
+            <div class="slide" style="background-image:url('assets/images/competition.jpg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-star"></i> Bihar's Premier Dance Academy</div>
+            <h1 class="hero-title">Bihar Dance Dil Se</h1>
+            <p class="hero-tagline">Dance with Passion, Perform with Confidence</p>
+            <div class="hero-stats">
+                <div class="stat"><span class="count" data-target="500">0</span>+<p>Students</p></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="count" data-target="10">0</span>+<p>Years</p></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="count" data-target="6">0</span>+<p>Dance Styles</p></div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#portal" class="btn btn-primary"><i class="fas fa-user-plus"></i> Get Started</a>
+                <a href="#about" class="btn btn-secondary"><i class="fas fa-circle-info"></i> More About BDDS</a>
+            </div>
+        </div>
+
+        <div class="slide-dots" id="slideDots"></div>
+        <button class="slide-arrow prev" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+        <button class="slide-arrow next" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+
+        <div class="hero-scroll">
+            <span></span>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">About BDDS</h2>
+                <p class="section-sub">Bihar Dance Dil Se (BDDS) is a professional dance academy dedicated to training students in various dance styles with confidence, discipline, and creativity.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>To inspire and empower dancers through quality training and performance opportunities that build lifelong confidence.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Our Vision</h3>
+                    <p>To become Bihar's leading dance academy, nurturing raw talent into polished performers on every stage.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-award"></i></div>
+                    <h3>Our Experience</h3>
+                    <p>10+ years of professional training with expert instructors and proven teaching methods across all age groups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DANCE STYLES ===== -->
+    <section class="styles advanced-section" id="styles">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Teach</span>
+                <h2 class="section-title">Dance Styles We Offer</h2>
+            </div>
+            <div class="styles-grid">
+                <div class="style-card" data-style="hiphop" role="button" tabindex="0" aria-label="Open Hip Hop details">
+                    <div class="style-icon"><i class="fas fa-music"></i></div>
+                    <h3>Hip Hop</h3>
+                    <p>Energetic street-style moves and urban choreography for all levels.</p>
+                    <span class="style-tag">Beginner Friendly</span>
+                    <span class="style-more">Explore Class <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="style-card" data-style="bollywood" role="button" tabindex="0" aria-label="Open Bollywood details">
+                    <div class="style-icon"><i class="fas fa-film"></i></div>
+                    <h3>Bollywood</h3>
+                    <p>Vibrant and expressive Bollywood dance with full filmy energy.</p>
+                    <span class="style-tag">Most Popular</span>
+                    <span class="style-more">Explore Class <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="style-card" data-style="contemporary" role="button" tabindex="0" aria-label="Open Contemporary details">
+                    <div class="style-icon"><i class="fas fa-star"></i></div>
+                    <h3>Contemporary</h3>
+                    <p>Express deep emotions through fluid, creative modern movements.</p>
+                    <span class="style-tag">Intermediate</span>
+                    <span class="style-more">Explore Class <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="style-card" data-style="semiclassical" role="button" tabindex="0" aria-label="Open Semi Classical details">
+                    <div class="style-icon"><i class="fas fa-om"></i></div>
+                    <h3>Semi Classical</h3>
+                    <p>Kathak-inspired semi classical training with graceful expression and rhythm.</p>
+                    <span class="style-tag">Kathak Only</span>
+                    <span class="style-more">Explore Class <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="style-card" data-style="freestyle" role="button" tabindex="0" aria-label="Open Freestyle details">
+                    <div class="style-icon"><i class="fas fa-fire"></i></div>
+                    <h3>Freestyle</h3>
+                    <p>Develop your unique personal style with improvisation and creativity.</p>
+                    <span class="style-tag">Advanced</span>
+                    <span class="style-more">Explore Class <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="style-card" data-style="kids" role="button" tabindex="0" aria-label="Open Kids Dance details">
+                    <div class="style-icon"><i class="fas fa-child"></i></div>
+                    <h3>Kids Dance</h3>
+                    <p>Fun, safe and engaging dance classes specially designed for children.</p>
+                    <span class="style-tag">Age 4-12</span>
+                    <span class="style-more">Explore Class <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="why-choose advanced-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Strengths</span>
+                <h2 class="section-title">Why Choose BDDS?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Professional Trainers</h3>
+                    <p>Certified and experienced dance instructors with stage performance background.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Stage Performances</h3>
+                    <p>Regular opportunities to perform on real stages and build true confidence.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Friendly Environment</h3>
+                    <p>Warm, supportive and encouraging atmosphere for every student.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Flexible Timings</h3>
+                    <p>Morning, evening and weekend batches to fit your busy schedule.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tags"></i>
+                    <h3>Affordable Fees</h3>
+                    <p>World-class quality training at the most competitive prices in Bihar.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Competition Prep</h3>
+                    <p>Dedicated training programs for dance competitions and reality shows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery advanced-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Moments</span>
+                <h2 class="section-title">Our Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="assets/images/performance-1.jpg" alt="Performance 1">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i><p>Stage Performance</p></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/performance-2.jpg" alt="Performance 2">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i><p>Live Performance</p></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/practice-session.jpg" alt="Practice Session">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i><p>Practice Session</p></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/event-highlight.jpg" alt="Event Highlight">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i><p>Event Highlight</p></div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="assets/images/group-performance.jpg" alt="Group Performance">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i><p>Group Performance</p></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/competition.jpg" alt="Competition">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i><p>Competition</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials advanced-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Student Reviews</span>
+                <h2 class="section-title">What Our Students Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"BDDS helped me gain confidence and improve my dance skills tremendously! Best decision of my life."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">P</div>
+                        <div><h4>Priya Sharma</h4><span>Bollywood Batch</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Best dance academy with the most supportive teachers and amazing stage performances every season."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">R</div>
+                        <div><h4>Rahul Kumar</h4><span>Hip Hop Batch</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"My daughter loves the kids dance classes. Great environment, caring teachers and wonderful teaching!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">A</div>
+                        <div><h4>Anjali Singh</h4><span>Kids Batch Parent</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CLASS TIMINGS ===== -->
+    <section class="timings advanced-section" id="timings">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Schedule</span>
+                <h2 class="section-title">Class Timings</h2>
+            </div>
+            <div class="timings-grid">
+                <div class="timing-card">
+                    <div class="timing-icon"><i class="fas fa-sun"></i></div>
+                    <h3>Morning Batch</h3>
+                    <p class="time"><i class="fas fa-clock"></i> 6:00 AM - 8:00 AM</p>
+                    <ul>
+                        <li><span>Beginner</span>6:00 - 7:00 AM</li>
+                        <li><span>Intermediate</span>7:00 - 8:00 AM</li>
+                    </ul>
+                </div>
+                <div class="timing-card featured">
+                    <div class="timing-badge">Most Popular</div>
+                    <div class="timing-icon"><i class="fas fa-moon"></i></div>
+                    <h3>Evening Batch</h3>
+                    <p class="time"><i class="fas fa-clock"></i> 5:00 PM - 8:00 PM</p>
+                    <ul>
+                        <li><span>Beginner</span>5:00 - 6:00 PM</li>
+                        <li><span>Intermediate</span>6:00 - 7:00 PM</li>
+                        <li><span>Advanced</span>7:00 - 8:00 PM</li>
+                    </ul>
+                </div>
+                <div class="timing-card">
+                    <div class="timing-icon"><i class="fas fa-calendar-week"></i></div>
+                    <h3>Weekend Batch</h3>
+                    <p class="time"><i class="fas fa-clock"></i> Sat & Sun: 9 AM - 12 PM</p>
+                    <ul>
+                        <li><span>All Levels</span>9:00 AM - 12:00 PM</li>
+                        <li><span>Kids Special</span>10:00 - 11:00 AM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact advanced-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reach Us</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="tel" placeholder="Your Phone" required>
+                        </div>
+                        <input type="email" placeholder="Your Email" required>
+                        <select>
+                            <option value="" disabled selected>Select Dance Style</option>
+                            <option>Hip Hop</option>
+                            <option>Bollywood</option>
+                            <option>Contemporary</option>
+                            <option>Semi Classical - Kathak</option>
+                            <option>Freestyle</option>
+                            <option>Kids Dance</option>
+                        </select>
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone / WhatsApp</h4>
+                            <p>+91 95234 51836</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@bdds.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Sonar Patti Road, Near Durga Temple,<br>Narkatiaganj, Bihar - 845455</p>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d887.8786389541855!2d84.46492257279913!3d27.10859845927021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39949d0045e92e77%3A0x2eb5fa58fd1cc607!2sBIHAR%20DANCE%20DIL%20SE!5e0!3m2!1sen!2sin!4v1778142550008!5m2!1sen!2sin" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LEARNING PORTAL ===== -->
+    <section class="portal" id="portal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Members Area</span>
+                <h2 class="section-title">Student & Teacher Portal</h2>
+                <p class="section-sub">Public visitors can explore the whole website. Login is only for class resources, practice links, and teacher uploads.</p>
+            </div>
+
+            <div class="portal-login-grid" id="portalLoginGrid">
+                <div class="portal-card">
+                    <div class="portal-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Teacher Login / Signup</h3>
+                    <p>Teachers can add practice videos, notes, assignments, and class links for a selected dance style.</p>
+                    <form class="portal-form" data-role="teacher">
+                        <input type="text" name="name" placeholder="Teacher Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-right-to-bracket"></i> Continue as Teacher</button>
+                    </form>
+                </div>
+
+                <div class="portal-card">
+                    <div class="portal-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h3>Student Login / Signup</h3>
+                    <p>Students can select their dance style and see only the resources related to that class.</p>
+                    <form class="portal-form" data-role="student">
+                        <input type="text" name="name" placeholder="Student Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <select name="style" required>
+                            <option value="" disabled selected>Select Your Dance Style</option>
+                            <option value="hiphop">Hip Hop</option>
+                            <option value="bollywood">Bollywood</option>
+                            <option value="contemporary">Contemporary</option>
+                            <option value="semiclassical">Semi Classical - Kathak</option>
+                            <option value="freestyle">Freestyle</option>
+                            <option value="kids">Kids Dance</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-right-to-bracket"></i> Continue as Student</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="dashboard" id="teacherDashboard" hidden>
+                <div class="dashboard-head">
+                    <div>
+                        <span class="section-tag">Teacher Dashboard</span>
+                        <h3 id="teacherWelcome">Upload Class Resources</h3>
+                    </div>
+                    <button class="btn btn-secondary portal-logout" type="button"><i class="fas fa-arrow-right-from-bracket"></i> Logout</button>
+                </div>
+                <form class="resource-form" id="resourceForm">
+                    <div class="form-row">
+                        <input type="text" id="resourceTitle" placeholder="Resource Title" required>
+                        <select id="resourceStyle" required>
+                            <option value="" disabled selected>Select Dance Style</option>
+                            <option value="hiphop">Hip Hop</option>
+                            <option value="bollywood">Bollywood</option>
+                            <option value="contemporary">Contemporary</option>
+                            <option value="semiclassical">Semi Classical - Kathak</option>
+                            <option value="freestyle">Freestyle</option>
+                            <option value="kids">Kids Dance</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <select id="resourceType" required>
+                            <option value="" disabled selected>Resource Type</option>
+                            <option>Practice Video</option>
+                            <option>Class Notes</option>
+                            <option>Assignment</option>
+                            <option>Music Track</option>
+                        </select>
+                        <input type="url" id="resourceLink" placeholder="YouTube / Drive / File Link" required>
+                    </div>
+                    <textarea id="resourceNote" rows="3" placeholder="Short instructions for students"></textarea>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-upload"></i> Add Resource</button>
+                </form>
+                <div class="resource-list" id="teacherResourceList"></div>
+            </div>
+
+            <div class="dashboard" id="studentDashboard" hidden>
+                <div class="dashboard-head">
+                    <div>
+                        <span class="section-tag">Student Dashboard</span>
+                        <h3 id="studentWelcome">Your Class Resources</h3>
+                    </div>
+                    <button class="btn btn-secondary portal-logout" type="button"><i class="fas fa-arrow-right-from-bracket"></i> Logout</button>
+                </div>
+                <div class="student-filter">
+                    <label for="studentStyleFilter">Dance Style</label>
+                    <select id="studentStyleFilter">
+                        <option value="hiphop">Hip Hop</option>
+                        <option value="bollywood">Bollywood</option>
+                        <option value="contemporary">Contemporary</option>
+                        <option value="semiclassical">Semi Classical - Kathak</option>
+                        <option value="freestyle">Freestyle</option>
+                        <option value="kids">Kids Dance</option>
+                    </select>
+                </div>
+                <div class="resource-list" id="studentResourceList"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <div class="logo footer-logo"><span class="logo-b">B</span>DDS</div>
+                    <p>Dance with Passion,<br>Perform with Confidence</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/bihar_dance_dil_se" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#styles" data-expand-site><i class="fas fa-chevron-right"></i> Dance Styles</a></li>
+                        <li><a href="#gallery" data-expand-site><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#contact" data-expand-site><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="#portal"><i class="fas fa-chevron-right"></i> Login Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dance Classes</h4>
+                    <ul>
+                        <li><a href="#styles" data-expand-site><i class="fas fa-chevron-right"></i> Hip Hop</a></li>
+                        <li><a href="#styles" data-expand-site><i class="fas fa-chevron-right"></i> Bollywood</a></li>
+                        <li><a href="#styles" data-expand-site><i class="fas fa-chevron-right"></i> Contemporary</a></li>
+                        <li><a href="#styles" data-expand-site><i class="fas fa-chevron-right"></i> Semi Classical</a></li>
+                        <li><a href="#styles" data-expand-site><i class="fas fa-chevron-right"></i> Kids Dance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> +91 95234 51836</li>
+                        <li><i class="fas fa-envelope"></i> info@bdds.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Narkatiaganj, Bihar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Bihar Dance Dil Se (BDDS). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919523451836" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <img id="lightboxImg" src="" alt="">
+    </div>
+
+    <!-- Dance Style Details -->
+    <div class="style-modal" id="styleModal" aria-hidden="true">
+        <div class="style-modal-panel" role="dialog" aria-modal="true" aria-labelledby="styleModalTitle">
+            <button class="style-modal-close" id="styleModalClose" aria-label="Close dance style details">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="style-modal-visual" id="styleModalVisual"></div>
+            <div class="style-modal-content">
+                <span class="style-modal-tag" id="styleModalTag"></span>
+                <h3 id="styleModalTitle"></h3>
+                <p id="styleModalArticle"></p>
+                <div class="style-modal-grid" id="styleModalHighlights"></div>
+                <a href="#contact" class="btn btn-primary style-modal-cta" id="styleModalCta"><i class="fas fa-user-plus"></i> Join This Class</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
